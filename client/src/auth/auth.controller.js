@@ -1,12 +1,14 @@
 /**
- * Created by bl4de on 17.10.2015.
+ * Created by Tasos on 17/10/2015.
  */
-angular
-    .module('angular-buildup')
-    .controller('AuthController', AuthController);
+(function() {
+    angular
+        .module('angular-buildup')
+        .controller('AuthController', AuthController);
 
-AuthController.$inject = [];
+    AuthController.$inject=[];
 
-function AuthController() {
-    this.testval = "Test val";
-}
+    function AuthController() {
+        this.controllerName = "This is auth controller";
+    }
+}());

@@ -4,20 +4,19 @@
 angular
     .module('angular-buildup', ['ngRoute'])
     .config(AppConfig)
-    .run(function () {
-        console.log('Angular app have runned');
-    });
+    .run(AppRun);
 
 AppConfig.$inject = ['$routeProvider'];
 
 function AppConfig($routeProvider) {
-    $routeProvider.when('/auth', {
-            templateUrl: "/static/src/auth/auth.template.html",
-            controller: "AuthController",
-            controllerAs: "auth"
-        })
-        .otherwise({
-            redirectTo: "/"
+    $routeProvider
+        .when('/auth', {
+            templateUrl: 'static/src/auth/auth.template.html',
+            controller: 'AuthController',
+            controllerAs: 'auth'
         });
 }
 
+function AppRun() {
+    console.log('Angular app have runned');
+}
