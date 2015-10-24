@@ -2,25 +2,25 @@
 	<h3>Room number</h3>
 	<ul>
 		<li>
-			<span>Name: </span><span>{{ roomInfo.name }}</span>
+			<span>Name: </span><span> Room {{ roomInfo.roomID }}</span>
 		</li>
 		<li>
 			<span>Area: </span><span>{{ roomInfo.area }}</span>
 		</li>
 		<li>
-			<span>Standard: </span><span> {{ roomInfo.standard }}</span>
+			<span>Type: </span><span> {{ roomInfo.standard }}</span>
 		</li>
 		<li>
 			<span>Capacity: </span><span>{{ roomInfo.capacity }}</span>
 		</li>
 		<li>
-			<span>Double Bed: </span><span>{{ roomInfo.bed }}</span>
+			<span>Double Bed: </span><span>{{ roomInfo.doubleBed }}</span>
 		</li>
 		<li>
 			<span>Price: </span><span>{{ roomInfo.price }}</span>
 		</li>
 	</ul>
-	<button>Book</button>
-	<button>Edit</button>
-	<button>Delete</button>
+	<button ng-click="bookRoom()">Book</button>
+	<button ng-click="editRoom()">Edit</button>
+	<button ng-click="deleteRoom()">Delete</button>
 </section>

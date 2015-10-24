@@ -12,28 +12,31 @@
         this.welcome = "ManagerRoomListController!";
         this.rooms = [
         	{
-        		name: "room 1",  
-        		area:"Third floor", 
-				standard: "Premium",
-				capacity: "3",
-				bed: "No",
-				price: "158.01"
+				roomID: "1",
+        		area: "secondFlor",
+        		capacity: "3",
+        		doubleBed: "true",
+        		standard: "premium",
+        		price: "128.34",
+        		urlImage: "/local/test/myimageroom.jpg"        	
         	},
         	{
-        		name: "room 2",  
-        		area:"Third floor", 
-				standard: "Delux",
-				capacity: "2",
-				bed: "Yes",
-				price: "258.01"
+				roomID: "2",
+        		area: "thirdFlor",
+        		capacity: "2",
+        		doubleBed: "true",
+        		standard: "delux",
+        		price: "228.34",
+        		urlImage: "/local/test/myimageroom.jpg"        	
         	},
 	       	{
-        		name: "room 3",  
-        		area:"Third floor", 
-				standard: "Simple",
-				capacity: "1",
-				bed: "Yes",
-				price: "58.01"
+				roomID: "3",
+        		area: "firstFlor",
+        		capacity: "1",
+        		doubleBed: "false",
+        		standard: "standard",
+        		price: "28.34",
+        		urlImage: "/local/test/myimageroom.jpg"        	
         	}
         ];
     }
