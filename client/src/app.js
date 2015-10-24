@@ -36,6 +36,11 @@ function AppConfig($routeProvider) {
             controller: 'HomepageController',
             controllerAs: 'homepage'
         })
+        .when('/booking/add', {
+            templateUrl: 'static/src/booking/bookingAdd.template.html',
+            controller: 'BookingAddController',
+            controllerAs: 'BookingAdd'
+        })
         .when('/auth', {
             templateUrl: 'static/src/auth/auth.template.html',
             controller: 'AuthController',
