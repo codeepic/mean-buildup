@@ -9,6 +9,11 @@
     AddRoomController.$inject=[];
 
     function AddRoomController() {
-        this.welcome = "AddRoomController!";
+    	var addRoom = this;
+        addRoom.welcome = "AddRoomController!";
+        addRoom.submitAddRoom= function(){
+        	console.log("Sucess", this.user)
+
+        }
     }
 }());

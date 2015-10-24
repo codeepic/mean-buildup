@@ -1,3 +1,12 @@
 <section id="add-room">
     {{addRoom.welcome}}
+
+  <form novalidate class="form-AddRoom" ng-submit="addRoom.submitAddRoom()">
+    Name: <input type="text" ng-model="addRoom.user.name" /><br />
+    E-mail: <input type="email" ng-model="addRoom.user.email" /><br />
+    Gender: <input type="radio" ng-model="addRoom.user.gender" value="male" />male
+    <input type="radio" ng-model="addRoom.user.gender" value="female" />female<br />
+    <input type="submit" value="Save" />
+  </form>
+
 </section>
