@@ -1,15 +1,21 @@
-<div class="container">
+<div class="container" ng-controller="AuthController">
 
     <form class="col-md-offset-3 col-md-6">
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="userName" class="sr-only">User name</label>
-        <input type="text" id="userName" class="form-control"
+        <input type="text" id="userName" class="form-control" ng-model="auth.login"
                placeholder="User name" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control"
+        <input type="password" id="inputPassword" class="form-control" ng-model="auth.password"
                placeholder="Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="auth.authenticate()">Sign in
         </button>
+
+
+        <div class="well" ng-show="auth.errorMessage.length > 0">
+            <span class="text-danger">{{auth.errorMessage}}</span>
+        </div>
     </form>
 
 </div> <!-- /container -->
