@@ -11,50 +11,25 @@ html(lang="en")
         meta(name="mobileoptimized", content="320")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="cleartype", content="on")
-        style.
-            body {
-                font-family: Verdana;
-                padding: 10px 10px;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                font-weight: 300;
-                line-height: 1.5em;
-            }
-
-            h3 {
-                font-weight: 500;
-                font-size: 1em;
-            }
-
-            p {
-                font-size: 1em;
-                line-height: 1.5em;
-            }
-
-            header {
-                padding: 20px 0px;
-            }
-
-            header h1 {
-                margin: 0;
-            }
-
-            header h3 {
-                margin: 0;
-            }
-
-            code {
-                line-height: 1.5em;
-                font-size: 1.3em;
-            }
-
-            .center {
-                text-align: center;
-                padding-top: 100px;
-                padding-bottom: 100px;
-            }
         include header
     body
+
+        nav.navbar.navbar-default
+            .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="#") Booker
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            p.navbar-text Logged in as user
+                        li
+                            a(href="#") Log out
         block content
+
+
         include javascript

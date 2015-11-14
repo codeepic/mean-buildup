@@ -1,3 +1,85 @@
 <section id="home">
-    {{homepage.welcome}}
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="center">
+                        Low prices<br/>
+                        Great rooms<br/>
+                        Awesome service
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10">
+                            <form class="form-horizontal">
+                                <h2>Book a room</h2>
+                                <fieldset>
+                                    <div class="form-groups">
+                                        <div class="form-group">
+                                            <label for="formName" class="col-sm-3 control-label">Name:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" id="formName" name="formName" class="form-control input-sm" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formEmail" class="col-sm-3 control-label">E-mail:</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" id="formEmail" name="formEmail" class="form-control input-sm" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formRoomType" class="col-sm-3 control-label">Room type:</label>
+                                            <div class="col-sm-9">
+                                                <select id="formRoomType" name="formRoomType" class="form-control input-sm">
+                                                    <option></option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formNumGuests" class="col-sm-3 control-label">No. of guests:</label>
+                                            <div class="col-sm-9">
+                                                <select id="formNumGuests" name="formNumGuests" class="form-control input-sm">
+                                                    <option></option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formFrom" class="col-sm-3 control-label">From:</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" id="formFrom" name="formFrom" class="form-control input-sm" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formTo" class="col-sm-3 control-label">To:</label>
+                                            <div class="col-sm-4">
+                                                <input type="date" id="formTo" name="formTo" class="form-control input-sm" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-3 col-sm-9">
+                                                <button class="btn btn-primary">Save</button>
+                                                <button class="btn btn-default">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+{{homepage.welcome}}
